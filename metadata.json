@@ -1,0 +1,8 @@
+{
+  "name": "Kerala Traditional Wedding - Celebration & RSVP",
+  "description": "An elegant Kerala traditional wedding celebration website featuring Kasavu gold and ivory hues, auspicious Muhurtham schedule, authentic Sadhya details, photo gallery, and WhatsApp RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
