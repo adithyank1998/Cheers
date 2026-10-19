@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { galleryPhotos, GalleryPhoto } from '../data/weddingData';
-import { X, ChevronLeft, ChevronRight, Maximize2, Heart } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Heart } from 'lucide-react';
 import { ScrollReveal, useSectionReveal } from './ScrollReveal';
 
 export const Gallery: React.FC = () => {
@@ -108,24 +108,6 @@ export const Gallery: React.FC = () => {
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500"
                 />
-
-                {/* Hover Dark Scrim & Romantic Caption Overlay in Sangria & Rose */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2B1019]/90 via-[#2B1019]/40 to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6 text-white">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-[#EBB6BF]">
-                      {photo.category}
-                    </span>
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center">
-                      <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
-                    </div>
-                  </div>
-                  <h4 className="text-lg sm:text-xl font-serif text-white tracking-wide">
-                    {photo.title}
-                  </h4>
-                  <p className="text-[11px] sm:text-xs text-white/80 line-clamp-2 mt-1">
-                    {photo.caption}
-                  </p>
-                </div>
               </div>
             ))}
           </div>
@@ -189,19 +171,6 @@ export const Gallery: React.FC = () => {
             >
               <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-          </div>
-
-          {/* Bottom Caption Bar */}
-          <div className="max-w-2xl mx-auto text-center pb-2 text-white px-2">
-            <h3 className="text-lg sm:text-2xl font-serif tracking-wide mb-1 text-[#F8F2F6]">
-              {activePhoto.title}
-            </h3>
-            <p className="text-xs sm:text-sm text-[#DDD0DD]">
-              {activePhoto.caption}
-            </p>
-            <p className="text-[10px] text-white/50 uppercase tracking-widest mt-1.5 sm:mt-2">
-              Use Left &amp; Right Arrow Keys to Navigate · ESC to Close
-            </p>
           </div>
         </div>
       )}
