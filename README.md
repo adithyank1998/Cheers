@@ -1,1 +1,1 @@
-
+An elegant, modern single-page wedding website and celebration portal featuring an interactive countdown, event itinerary, Google Maps venue directions, responsive photo gallery with full lightbox viewer, dark/light theme switching, and direct WhatsApp RSVP integration with dynamic couple customization.
