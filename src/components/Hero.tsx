@@ -90,9 +90,6 @@ export const Hero: React.FC<HeroProps> = ({ config }) => {
       <div className="absolute top-1/3 -right-32 w-80 sm:w-[32rem] h-80 sm:h-[32rem] rounded-full bg-[#C48A4E]/15 dark:bg-[#C48A4E]/15 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-80 sm:w-[40rem] h-64 sm:h-[24rem] rounded-full bg-[#D28793]/15 dark:bg-[#913552]/20 blur-3xl pointer-events-none" />
 
-      {/* Fine-art Geometric Frame Line in Thistle */}
-      <div className="absolute inset-3 sm:inset-8 md:inset-12 lg:inset-14 border border-[#DDD1DF]/60 dark:border-[#3D1E2D]/60 pointer-events-none rounded-2xl" />
-
       {/* Main Content Container */}
       <div className="relative max-w-4xl mx-auto text-center flex flex-col items-center w-full px-2 sm:px-4">
         {/* Subtle Editorial Top Kicker */}
